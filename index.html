@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator-program</title>
+</head>
+<body>
+
+<h1> calculate multiplication and division of two numbers (input from user)</h1>
+ 
+
+    <input type="text" id="fast"/><br><br>
+    <input type="text" id="second"/><br><br>
+    <input type="button" value="*" onclick="return myfun()"/><br>
+    <input type="button" value="/" onclick="return myfun2()"/><br><br>
+    <b>Output here:</b>
+    <span id="result"></span>
+
+
+    <script>
+        function myfun(){
+            var a=document.getElementById('fast').value;
+            var b=document.getElementById('second').value;
+            document.getElementById('result').innerHTML=(a*b);
+        }
+        function myfun2(){
+            var a=document.getElementById('fast').value;
+            var b=document.getElementById('second').value;
+            document.getElementById('result').innerHTML=(a/b);
+        }
+    </script>
+
+
+
+    
+    
+</body>
+</html>
